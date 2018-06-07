@@ -1,0 +1,1123 @@
+diff --git a/.classpath b/.classpath
+new file mode 100644
+index 0000000..82c7da6
+--- /dev/null
++++ b/.classpath
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="src" path="src"/>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_171">
++		<attributes>
++			<attribute name="owner.project.facets" value="java"/>
++		</attributes>
++	</classpathentry>
++	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
++		<attributes>
++			<attribute name="owner.project.facets" value="jst.web"/>
++		</attributes>
++	</classpathentry>
++	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
++	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
++	<classpathentry kind="output" path="build/classes"/>
++</classpath>
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..84c048a
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++/build/
+diff --git a/.project b/.project
+new file mode 100644
+index 0000000..e9bfcbc
+--- /dev/null
++++ b/.project
+@@ -0,0 +1,31 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>StudentApp</name>
++	<comment></comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++		<buildCommand>
++			<name>org.eclipse.wst.common.project.facet.core.builder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++		<buildCommand>
++			<name>org.eclipse.wst.validation.validationbuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
++		<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>
++		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
++	</natures>
++</projectDescription>
+diff --git a/.settings/.jsdtscope b/.settings/.jsdtscope
+new file mode 100644
+index 0000000..5cee5ac
+--- /dev/null
++++ b/.settings/.jsdtscope
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry excluding="**/bower_components/*|**/node_modules/*|**/*.min.js" kind="src" path="WebContent"/>
++	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
++	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.WebProject">
++		<attributes>
++			<attribute name="hide" value="true"/>
++		</attributes>
++	</classpathentry>
++	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.baseBrowserLibrary"/>
++	<classpathentry kind="output" path=""/>
++</classpath>
+diff --git a/.settings/org.eclipse.jdt.core.prefs b/.settings/org.eclipse.jdt.core.prefs
+new file mode 100644
+index 0000000..295926d
+--- /dev/null
++++ b/.settings/org.eclipse.jdt.core.prefs
+@@ -0,0 +1,7 @@
++eclipse.preferences.version=1
++org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
++org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
++org.eclipse.jdt.core.compiler.compliance=1.8
++org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
++org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
++org.eclipse.jdt.core.compiler.source=1.8
+diff --git a/.settings/org.eclipse.wst.common.component b/.settings/org.eclipse.wst.common.component
+new file mode 100644
+index 0000000..58aa330
+--- /dev/null
++++ b/.settings/org.eclipse.wst.common.component
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
++    <wb-module deploy-name="StudentApp">
++        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
++        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
++        <property name="context-root" value="StudentApp"/>
++        <property name="java-output-path" value="/StudentApp/build/classes"/>
++    </wb-module>
++</project-modules>
+diff --git a/.settings/org.eclipse.wst.common.project.facet.core.xml b/.settings/org.eclipse.wst.common.project.facet.core.xml
+new file mode 100644
+index 0000000..57b4195
+--- /dev/null
++++ b/.settings/org.eclipse.wst.common.project.facet.core.xml
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<faceted-project>
++  <runtime name="Apache Tomcat v8.0"/>
++  <fixed facet="wst.jsdt.web"/>
++  <fixed facet="jst.web"/>
++  <fixed facet="java"/>
++  <installed facet="java" version="1.8"/>
++  <installed facet="jst.web" version="3.1"/>
++  <installed facet="wst.jsdt.web" version="1.0"/>
++</faceted-project>
+diff --git a/.settings/org.eclipse.wst.jsdt.ui.superType.container b/.settings/org.eclipse.wst.jsdt.ui.superType.container
+new file mode 100644
+index 0000000..3bd5d0a
+--- /dev/null
++++ b/.settings/org.eclipse.wst.jsdt.ui.superType.container
+@@ -0,0 +1 @@
++org.eclipse.wst.jsdt.launching.baseBrowserLibrary
+\ No newline at end of file
+diff --git a/.settings/org.eclipse.wst.jsdt.ui.superType.name b/.settings/org.eclipse.wst.jsdt.ui.superType.name
+new file mode 100644
+index 0000000..05bd71b
+--- /dev/null
++++ b/.settings/org.eclipse.wst.jsdt.ui.superType.name
+@@ -0,0 +1 @@
++Window
+\ No newline at end of file
+diff --git a/WebContent/META-INF/MANIFEST.MF b/WebContent/META-INF/MANIFEST.MF
+new file mode 100644
+index 0000000..5e94951
+--- /dev/null
++++ b/WebContent/META-INF/MANIFEST.MF
+@@ -0,0 +1,3 @@
++Manifest-Version: 1.0
++Class-Path: 
++
+diff --git a/WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar b/WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar
+new file mode 100644
+index 0000000..4e2edcc
+--- /dev/null
++++ b/WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar
+Binary files differ
+diff --git a/WebContent/WEB-INF/lib/jstl-1.2.jar b/WebContent/WEB-INF/lib/jstl-1.2.jar
+new file mode 100644
+index 0000000..0fd275e
+--- /dev/null
++++ b/WebContent/WEB-INF/lib/jstl-1.2.jar
+Binary files differ
+diff --git a/WebContent/WEB-INF/lib/mysql-connector-java-5.1.17-bin.jar b/WebContent/WEB-INF/lib/mysql-connector-java-5.1.17-bin.jar
+new file mode 100644
+index 0000000..026dc39
+--- /dev/null
++++ b/WebContent/WEB-INF/lib/mysql-connector-java-5.1.17-bin.jar
+Binary files differ
+diff --git a/WebContent/WEB-INF/web.xml b/WebContent/WEB-INF/web.xml
+new file mode 100644
+index 0000000..ea34deb
+--- /dev/null
++++ b/WebContent/WEB-INF/web.xml
+@@ -0,0 +1,39 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
++  <display-name>Student Application</display-name>
++  <welcome-file-list>
++    <welcome-file>student_info.html</welcome-file>
++  </welcome-file-list>
++  <servlet>
++    <servlet-name>studentServlet</servlet-name>
++    <servlet-class>com.demo.Student.StudentServlet</servlet-class>
++  </servlet>
++  <servlet-mapping>
++    <servlet-name>studentServlet</servlet-name>
++    <url-pattern>/student.htm</url-pattern>
++  </servlet-mapping>
++  <servlet>
++    <servlet-name>meetingServlet</servlet-name>
++    <servlet-class>com.demo.Meeting.MeetingServlet</servlet-class>
++  </servlet>
++  <servlet-mapping>
++    <servlet-name>meetingServlet</servlet-name>
++    <url-pattern>/meeting.htm</url-pattern>
++  </servlet-mapping>
++  <servlet>
++    <servlet-name>logoutServlet</servlet-name>
++    <servlet-class>com.demo.Meeting.LogoutServlet</servlet-class>
++  </servlet>
++  <servlet-mapping>
++    <servlet-name>logoutServlet</servlet-name>
++    <url-pattern>/logoutUser.htm</url-pattern>
++  </servlet-mapping>
++   <servlet>
++    <servlet-name>saveServlet</servlet-name>
++    <servlet-class>com.demo.Meeting.SaveServlet</servlet-class>
++  </servlet>
++  <servlet-mapping>
++    <servlet-name>saveServlet</servlet-name>
++    <url-pattern>/saveInfo.htm</url-pattern>
++  </servlet-mapping>
++</web-app>
+\ No newline at end of file
+diff --git a/WebContent/contents.jsp b/WebContent/contents.jsp
+new file mode 100644
+index 0000000..29277a5
+--- /dev/null
++++ b/WebContent/contents.jsp
+@@ -0,0 +1,87 @@
++<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
++    pageEncoding="ISO-8859-1"%>
++<%@ page import= "com.demo.Meeting.StudentMeetingDto" %>
++<%@ page import= "com.demo.Meeting.StudentMeetingDao" %>
++<%@ page import= "java.util.*" %>
++
++<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
++<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
++
++<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
++<html>
++<head>
++<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
++<title>Insert title here</title>
++
++<!-- Latest compiled and minified CSS -->
++<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
++
++<!-- Optional theme -->
++<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
++
++<!-- Latest compiled and minified JavaScript -->
++<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
++
++<style type = "text/css">
++body
++{
++     padding: 25px;
++}
++</style>
++</head>
++<body>
++<h1 align = "center">Student Information</h1>
++<div align = "right">
++   <a href = "logoutUser.htm">Logout</a>
++</div>
++
++
++<div class="panel panel-primary">
++  <div class="panel-heading">Student Details</div>
++  <div class="panel-body"></div>
++  
++  <table class = "table table-bordered">
++     <thead>
++        <tr>
++           <th>Meeting Id</th>
++           <th>Name</th>
++           <th>Meeting Agenda</th>
++           <th>Select the below check boxes</th>
++           <th>Action</th>
++           
++        </tr>
++     </thead>
++     
++      <tbody>
++      
++     <c:forEach items="${requestScope.studmeetDtos}" var="row" varStatus = "status">
++        <tr>
++           <td>${row.id}</td>
++           <td>${row.name}</td>
++           <td>${row.meeting_agenda}</td>
++            <td>
++           <c:forEach var="i" begin="1" end="2">
++              <label>
++              <input type="checkbox" value="meeting"<c:out value="${i}"/> />
++              M<c:out value="${i}"/>
++              </label>
++           </c:forEach>
++           </td>
++           <td>
++           <form method="post" action="saveInfo.htm">
++              <input type="hidden" value="${row.id}" name="id" />
++              <input type="hidden" value="${row.name}" name="name" />
++              <input type="hidden" value="${row.meeting_agenda}" name="meeting_agenda" />
++              <input type="submit" value="Save" name="save" />
++           </form>
++           </td>
++        </tr>
++        </c:forEach> 
++        
++      </tbody>
++    
++  </table>
++ </div>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebContent/details.html b/WebContent/details.html
+new file mode 100644
+index 0000000..40243fe
+--- /dev/null
++++ b/WebContent/details.html
+@@ -0,0 +1,27 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta charset="ISO-8859-1">
++<title>Insert title here</title>
++<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
++  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
++  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
++</head>
++<body>
++<form action="content.html">
++<h3>Select Meeting Id from the below Drop down list</h3>
++<div class="dropdown">
++    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Meeting Id
++    <span class="caret"></span></button>
++    <button type="submit" class="btn btn-default" aria-label="center Align">
++  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
++</button>
++    <ul class="dropdown-menu">
++      <li><a href="#"></a></li>
++      <li><a href="#">2</a></li>
++      <li><a href="#">3</a></li>
++    </ul>
++  </div>
++</form>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebContent/details.jsp b/WebContent/details.jsp
+new file mode 100644
+index 0000000..89ace7c
+--- /dev/null
++++ b/WebContent/details.jsp
+@@ -0,0 +1,51 @@
++<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
++    pageEncoding="ISO-8859-1"%>
++<%@ page import= "com.demo.Meeting.*" %>
++<%@ page import= "java.util.*" %>
++<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
++<html>
++<head>
++<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
++<title>Insert title here</title>
++<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
++  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
++  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
++</head>
++<body>
++
++<%
++    List<StudentMeetingDto> studmeetDtos = (List<StudentMeetingDto>)request.getAttribute("studmeetDtos");
++ %>
++
++<form method = "get">
++<h3>Select Meeting Id from the below Drop down list</h3>
++     <table class = "table table-bordered">
++     <thead>
++     <tr>
++     <th>Meeting Id</th>
++     <th>Search</th>
++     </tr>
++     </thead>
++      <tbody>
++      <%
++         for(StudentMeetingDto studmeetDto: studmeetDtos)
++         {
++      %>
++      <tr>
++      <td><%= studmeetDto.getId() %></td>
++      <td>
++       <button type="submit" class="btn btn-default" aria-label="center Align">
++       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
++       </button>
++       </td>
++      </tr>
++      <%
++      }
++      %>
++      </tbody>
++    
++  </table>
++  </div>
++</form>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebContent/failureStudent.html b/WebContent/failureStudent.html
+new file mode 100644
+index 0000000..cedb800
+--- /dev/null
++++ b/WebContent/failureStudent.html
+@@ -0,0 +1,10 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta charset="ISO-8859-1">
++<title>Insert title here</title>
++</head>
++<body>
++<h1>Failure!!</h1>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebContent/meeting_info.html b/WebContent/meeting_info.html
+new file mode 100644
+index 0000000..c00901d
+--- /dev/null
++++ b/WebContent/meeting_info.html
+@@ -0,0 +1,52 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta charset="ISO-8859-1">
++<title>Insert title here</title>
++<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
++  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
++  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
++</head>
++<body>
++<h1 align = "center">Meeting Information Form</h1>
++<div class="container">
++  <form class="form-horizontal" action="meeting.htm" method = "get">
++  <div class="form-group">
++      <label class="control-label col-sm-2" for="meeting_id">Meeting Id:</label>
++      <div class="col-sm-10">
++        <input type="text" class="form-control" id="meeting_id" placeholder="Enter meeting_id" name="meeting_id">
++      </div>
++    </div>
++    <div class="form-group">
++      <label class="control-label col-sm-2" for="meeting_date">Meeting Date:</label>
++      <div class="col-sm-10">
++        <input type="text" class="form-control" id="meeting_date" placeholder="Enter meeting_date" name="meeting_date">
++      </div>
++    </div>
++    <div class="form-group">
++      <label class="control-label col-sm-2" for="meeting_agenda">Meeting Agenda:</label>
++      <div class="col-sm-10">
++        <input type="text" class="form-control" id="meeting_agenda" placeholder="Enter meeting_agenda" name="meeting_agenda">
++      </div>
++    </div>
++    <div class="form-group">
++      <label class="control-label col-sm-2" for="faculty_name">Faculty Name:</label>
++      <div class="col-sm-10">          
++        <input type="text" class="form-control" id="faculty_name" placeholder="Enter faculty_name" name="faculty_name">
++      </div>
++    </div>
++    <div class="form-group">
++      <label class="control-label col-sm-2" for="comment">Remarks:</label>
++      <div class="col-sm-10"> 
++      <textarea class="form-control" rows="5" id="comment" placeholder="Enter Remarks" name = "remarks"></textarea>
++    </div>
++    </div>
++    <div class="form-group" align = "center">        
++      <div class="col-sm-offset-2 col-sm-10">
++        <button type="submit" class="btn btn-default">Submit</button>
++      </div>
++    </div>
++  </form>
++</div>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebContent/page.html b/WebContent/page.html
+new file mode 100644
+index 0000000..b766f70
+--- /dev/null
++++ b/WebContent/page.html
+@@ -0,0 +1,78 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta charset="ISO-8859-1">
++<title>Insert title here</title>
++<!-- Latest compiled and minified CSS -->
++<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
++
++<!-- Optional theme -->
++<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
++
++<!-- Latest compiled and minified JavaScript -->
++<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
++
++<style type = "text/css">
++body {
++  padding-top: 40px;
++  padding-bottom: 40px;
++  background-color: #eee;
++}
++
++.form-signin {
++  max-width: 330px;
++  padding: 15px;
++  margin: 0 auto;
++}
++.form-signin .form-signin-heading,
++.form-signin .checkbox {
++  margin-bottom: 10px;
++}
++.form-signin .checkbox {
++  font-weight: normal;
++}
++.form-signin .form-control {
++  position: relative;
++  height: auto;
++  -webkit-box-sizing: border-box;
++     -moz-box-sizing: border-box;
++          box-sizing: border-box;
++  padding: 10px;
++  font-size: 16px;
++}
++.form-signin .form-control:focus {
++  z-index: 2;
++}
++.form-signin input[type="email"] {
++  margin-bottom: -1px;
++  border-bottom-right-radius: 0;
++  border-bottom-left-radius: 0;
++}
++.form-signin input[type="password"] {
++  margin-bottom: 10px;
++  border-top-left-radius: 0;
++  border-top-right-radius: 0;
++}
++</style>
++
++
++</head>
++<body>
++
++
++    <div class="container">
++
++      <form class="form-signin" action = "validateUser.htm" method = "get">
++        <h2 class="form-signin-heading">Please sign in</h2>
++        <label for="username" class="sr-only">Username</label>
++        <input type="text" id="username" name = "username" class="form-control" placeholder="Username" required autofocus>
++        <label for="password" class="sr-only">Password</label>
++        <input type="password" id="password" name = "password" class="form-control" placeholder="Password" required>
++       
++        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
++      </form>
++
++    </div>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebContent/page.jsp b/WebContent/page.jsp
+new file mode 100644
+index 0000000..7184d14
+--- /dev/null
++++ b/WebContent/page.jsp
+@@ -0,0 +1,31 @@
++<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
++    pageEncoding="ISO-8859-1"%>
++<%@ page import= "java.util.Date" %>
++<%@ page import= "java.io.PrintWriter" %>
++<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
++<html>
++<head>
++<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
++<title>Insert title here</title>
++</head>
++<body>
++
++<%! 
++int var = 90;
++
++void callMe()
++{
++	
++}
++
++%>
++
++<%
++   System.out.println(new Date());
++   String value1 = request.getParameter("param1");
++   String value2 = request.getParameter("param2");
++   
++   out.println(value1);
++%>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebContent/student_info.html b/WebContent/student_info.html
+new file mode 100644
+index 0000000..8ff66cc
+--- /dev/null
++++ b/WebContent/student_info.html
+@@ -0,0 +1,66 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta charset="ISO-8859-1">
++<title>Insert title here</title>
++<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
++  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
++  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
++</head>
++<body>
++<h1 align = "center">Student Information Form</h1>
++<div class="container">
++  <form class="form-horizontal" action="student.htm" method = "get">
++  <div class="form-group">
++      <label class="control-label col-sm-2" for="name">Student Id:</label>
++      <div class="col-sm-10">
++        <input type="text" class="form-control" id="id" placeholder="Enter id" name="id">
++      </div>
++    </div>
++  <div class="form-group">
++      <label class="control-label col-sm-2" for="name">Name:</label>
++      <div class="col-sm-10">
++        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
++      </div>
++    </div>
++    <div class="form-group">
++      <label class="control-label col-sm-2" for="address">Address:</label>
++      <div class="col-sm-10">
++        <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address">
++      </div>
++    </div>
++    <div class="form-group">
++      <label class="control-label col-sm-2" for="phone_no">Phone No:</label>
++      <div class="col-sm-10">
++        <input type="text" class="form-control" id="phone_no" placeholder="Enter Phone No" name="phone_no">
++      </div>
++    </div>
++    <div class="form-group">
++      <label class="control-label col-sm-2" for="email">Email Id:</label>
++      <div class="col-sm-10">
++        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
++      </div>
++    </div>
++    <div class="form-group">
++      <label class="control-label col-sm-2" for="pwd">Password:</label>
++      <div class="col-sm-10">          
++        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
++      </div>
++    </div>
++    <div class="form-group">        
++      <div class="col-sm-offset-2 col-sm-10">
++        <div class="checkbox">
++          <label><input type="checkbox" name="remember"> Remember me</label>
++        </div>
++      </div>
++    </div>
++    <div class="form-group" align = "center">        
++      <div class="col-sm-offset-2 col-sm-10">
++        <button type="submit" class="btn btn-default">Submit</button>
++      </div>
++    </div>
++  </form>
++</div>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebContent/success.html b/WebContent/success.html
+new file mode 100644
+index 0000000..e3ff0be
+--- /dev/null
++++ b/WebContent/success.html
+@@ -0,0 +1,10 @@
++<!DOCTYPE html>
++<html>
++<head>
++<meta charset="ISO-8859-1">
++<title>Insert title here</title>
++</head>
++<body>
++<h1 align = "center">Data saved successfully!</h1>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/src/com/demo/Meeting/LogoutServlet.java b/src/com/demo/Meeting/LogoutServlet.java
+new file mode 100644
+index 0000000..15a5fac
+--- /dev/null
++++ b/src/com/demo/Meeting/LogoutServlet.java
+@@ -0,0 +1,27 @@
++package com.demo.Meeting;
++
++import java.io.IOException;
++import javax.servlet.ServletException;
++import javax.servlet.annotation.WebServlet;
++import javax.servlet.http.HttpServlet;
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++import javax.servlet.http.HttpSession;
++
++/**
++ * Servlet implementation class LogoutServlet
++ */
++@WebServlet("/LogoutServlet")
++public class LogoutServlet extends HttpServlet {
++	private static final long serialVersionUID = 1L;
++       
++   protected void service(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException
++
++   {
++	   HttpSession session = request.getSession(false);//retrieve current session
++	   
++	   session.invalidate();
++	   
++	   response.sendRedirect("student_info.html");
++   }
++}
+diff --git a/src/com/demo/Meeting/MeetingServlet.java b/src/com/demo/Meeting/MeetingServlet.java
+new file mode 100644
+index 0000000..1c9fae7
+--- /dev/null
++++ b/src/com/demo/Meeting/MeetingServlet.java
+@@ -0,0 +1,76 @@
++package com.demo.Meeting;
++
++import java.io.IOException;
++import java.io.PrintWriter;
++import java.sql.Connection;
++import java.sql.DriverManager;
++import java.sql.PreparedStatement;
++import java.util.List;
++
++import javax.servlet.ServletException;
++import javax.servlet.annotation.WebServlet;
++import javax.servlet.http.HttpServlet;
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++import javax.servlet.http.HttpSession;
++
++/**
++ * Servlet implementation class MeetingServlet
++ */
++@WebServlet("/MeetingServlet")
++public class MeetingServlet extends HttpServlet {
++	private static final long serialVersionUID = 1L;
++    
++	StudentMeetingDao studmeetDao = new StudentMeetingDao();
++	public void service(HttpServletRequest request,HttpServletResponse response) throws IOException
++	{
++		response.setContentType("text/html");
++		PrintWriter out = response.getWriter();
++		
++		try
++		{
++			String meeting_id = request.getParameter("meeting_id");
++			String meeting_date = request.getParameter("meeting_date");
++			String meeting_agenda = request.getParameter("meeting_agenda");
++			String faculty_name = request.getParameter("faculty_name");
++			String remarks = request.getParameter("remarks");
++			
++			System.out.println(meeting_id);
++			
++			Class.forName("com.mysql.jdbc.Driver");
++			
++			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studapp","root","root");
++			
++			PreparedStatement ps = con.prepareStatement("insert into meeting (id,meeting_date,meeting_agenda,faculty_name,remarks) values(?,?,?,?,?)");
++			ps.setString(1, meeting_id);
++			ps.setString(2, meeting_date);
++			ps.setString(3, meeting_agenda);
++			ps.setString(4, faculty_name);
++			ps.setString(5, remarks);
++			
++			int i = ps.executeUpdate();
++			
++			if(i != 0)
++			{
++				List<StudentMeetingDto> studmeetDtos = studmeetDao.findAll();
++				
++				request.setAttribute("studmeetDtos", studmeetDtos);
++				
++				request.getRequestDispatcher("contents.jsp").forward(request, response);
++			}
++			
++			else
++			{
++				response.sendRedirect("failure.html");
++			}
++			
++			
++		}
++		
++		catch(Exception e)
++		{
++			e.printStackTrace();
++		}
++		
++	}
++}
+diff --git a/src/com/demo/Meeting/SaveServlet.java b/src/com/demo/Meeting/SaveServlet.java
+new file mode 100644
+index 0000000..d29e709
+--- /dev/null
++++ b/src/com/demo/Meeting/SaveServlet.java
+@@ -0,0 +1,62 @@
++package com.demo.Meeting;
++
++import java.io.IOException;
++import java.io.PrintWriter;
++import java.sql.Connection;
++import java.sql.DriverManager;
++import java.sql.PreparedStatement;
++
++import javax.servlet.ServletException;
++import javax.servlet.annotation.WebServlet;
++import javax.servlet.http.HttpServlet;
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++
++/**
++ * Servlet implementation class SaveServlet
++ */
++@WebServlet("/SaveServlet")
++public class SaveServlet extends HttpServlet {
++	private static final long serialVersionUID = 1L;
++       
++	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException
++	{
++		response.setContentType("text/html");
++		PrintWriter out = response.getWriter();
++		
++		try
++		{
++			String id = request.getParameter("id");
++			String name = request.getParameter("name");
++			String meeting_agenda = request.getParameter("meeting_agenda");
++			
++			Class.forName("com.mysql.jdbc.Driver");
++			
++			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studapp","root","root");
++			
++			PreparedStatement ps = con.prepareStatement("insert into stud_meeting (id,name,meeting_agenda) values (?,?,?)");
++			ps.setString(1, id);
++			ps.setString(2, name);
++			ps.setString(3, meeting_agenda);
++	
++			int i = ps.executeUpdate();
++			
++			if(i != 0)
++			{
++				response.sendRedirect("success.html");
++			}
++			
++			else
++			{
++				response.sendRedirect("failureStudent.html");
++			}
++			
++		}
++		
++		catch(Exception e)
++		{
++			e.printStackTrace();
++		}
++		
++	}
++}
+diff --git a/src/com/demo/Meeting/StudentMeetingDao.java b/src/com/demo/Meeting/StudentMeetingDao.java
+new file mode 100644
+index 0000000..254b5b8
+--- /dev/null
++++ b/src/com/demo/Meeting/StudentMeetingDao.java
+@@ -0,0 +1,56 @@
++package com.demo.Meeting;
++
++import java.sql.Connection;
++import java.sql.DriverManager;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.sql.SQLException;
++import java.util.ArrayList;
++import java.util.List;
++
++
++public class StudentMeetingDao 
++{
++	
++	public List<StudentMeetingDto> findAll() throws SQLException, ClassNotFoundException
++	{
++		 Class.forName("com.mysql.jdbc.Driver");
++			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studapp","root","root");
++			try
++			{
++				PreparedStatement statement = con.prepareStatement("select * from student,meeting where student.id = meeting.id order by meeting.id asc");
++				
++				ResultSet rs = statement.executeQuery();
++				
++				List<StudentMeetingDto> dtoList = new ArrayList<StudentMeetingDto>();
++				
++				while(rs.next())
++				{
++					StudentMeetingDto studmeetDto = new StudentMeetingDto();
++					studmeetDto.setId(rs.getString("id"));
++					studmeetDto.setName(rs.getString("name"));
++					studmeetDto.setAddress(rs.getString("address"));
++					studmeetDto.setEmail(rs.getString("email"));
++					studmeetDto.setPassword(rs.getString("password"));
++					studmeetDto.setMeeting_date(rs.getString("meeting_date"));
++					studmeetDto.setMeeting_agenda(rs.getString("meeting_agenda"));
++					studmeetDto.setFaculty_name(rs.getString("faculty_name"));
++					studmeetDto.setRemarks(rs.getString("remarks"));
++					
++					dtoList.add(studmeetDto);
++				}
++				
++				return dtoList;
++			}
++			catch(Exception e)
++			{
++				return null;
++			}
++			
++			finally
++			{
++				con.close();
++			}
++	}
++
++}
+diff --git a/src/com/demo/Meeting/StudentMeetingDto.java b/src/com/demo/Meeting/StudentMeetingDto.java
+new file mode 100644
+index 0000000..fe68496
+--- /dev/null
++++ b/src/com/demo/Meeting/StudentMeetingDto.java
+@@ -0,0 +1,106 @@
++package com.demo.Meeting;
++
++public class StudentMeetingDto 
++{
++	
++	private String id;
++	private String name;
++	private String address;
++	private String phoneNo;
++	private String email;
++	private String password;
++	
++	private String meeting_date;
++	private String meeting_agenda;
++	private String faculty_name;
++	private String remarks;
++	
++	private String stud_info_id;
++	private String stud_info_name;
++	private String stud_info_meeting_agenda;
++	
++	
++	
++	public String getStud_info_id() {
++		return stud_info_id;
++	}
++	public void setStud_info_id(String stud_info_id) {
++		this.stud_info_id = stud_info_id;
++	}
++	public String getStud_info_name() {
++		return stud_info_name;
++	}
++	public void setStud_info_name(String stud_info_name) {
++		this.stud_info_name = stud_info_name;
++	}
++	public String getStud_info_meeting_agenda() {
++		return stud_info_meeting_agenda;
++	}
++	public void setStud_info_meeting_agenda(String stud_info_meeting_agenda) {
++		this.stud_info_meeting_agenda = stud_info_meeting_agenda;
++	}
++	public String getId() {
++		return id;
++	}
++	public void setId(String id) {
++		this.id = id;
++	}
++	public String getName() {
++		return name;
++	}
++	public void setName(String name) {
++		this.name = name;
++	}
++	public String getAddress() {
++		return address;
++	}
++	public void setAddress(String address) {
++		this.address = address;
++	}
++	public String getPhoneNo() {
++		return phoneNo;
++	}
++	public void setPhoneNo(String phoneNo) {
++		this.phoneNo = phoneNo;
++	}
++	public String getEmail() {
++		return email;
++	}
++	public void setEmail(String email) {
++		this.email = email;
++	}
++	public String getPassword() {
++		return password;
++	}
++	public void setPassword(String password) {
++		this.password = password;
++	}
++	public String getMeeting_date() {
++		return meeting_date;
++	}
++	public void setMeeting_date(String meeting_date) {
++		this.meeting_date = meeting_date;
++	}
++	public String getMeeting_agenda() {
++		return meeting_agenda;
++	}
++	public void setMeeting_agenda(String meeting_agenda) {
++		this.meeting_agenda = meeting_agenda;
++	}
++	public String getFaculty_name() {
++		return faculty_name;
++	}
++	public void setFaculty_name(String faculty_name) {
++		this.faculty_name = faculty_name;
++	}
++	public String getRemarks() {
++		return remarks;
++	}
++	public void setRemarks(String remarks) {
++		this.remarks = remarks;
++	}
++	
++	
++	
++
++}
+diff --git a/src/com/demo/Student/StudentServlet.java b/src/com/demo/Student/StudentServlet.java
+new file mode 100644
+index 0000000..55437ab
+--- /dev/null
++++ b/src/com/demo/Student/StudentServlet.java
+@@ -0,0 +1,68 @@
++package com.demo.Student;
++
++import java.io.IOException;
++import java.io.PrintWriter;
++import java.sql.Connection;
++import java.sql.DriverManager;
++import java.sql.PreparedStatement;
++
++import javax.servlet.ServletException;
++import javax.servlet.annotation.WebServlet;
++import javax.servlet.http.HttpServlet;
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++
++/**
++ * Servlet implementation class StudentServlet
++ */
++@WebServlet("/StudentServlet")
++public class StudentServlet extends HttpServlet {
++	private static final long serialVersionUID = 1L;
++       
++	public void service(HttpServletRequest request,HttpServletResponse response) throws IOException
++	{
++		response.setContentType("text/html");
++		PrintWriter out = response.getWriter();
++		
++		try
++		{
++			String id = request.getParameter("id");
++			String name = request.getParameter("name");
++			String address = request.getParameter("address");
++			String phoneNo = request.getParameter("phone_no");
++			String email = request.getParameter("email");
++			String password = request.getParameter("pwd");
++			
++			Class.forName("com.mysql.jdbc.Driver");
++			
++			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studapp","root","root");
++			
++			PreparedStatement ps = con.prepareStatement("insert into student (id,name,address,phoneNo,email,password) values (?,?,?,?,?,?)");
++			ps.setString(1, id);
++			ps.setString(2, name);
++			ps.setString(3, address);
++			ps.setString(4, phoneNo);
++			ps.setString(5, email);
++			ps.setString(6, password);
++			
++			int i = ps.executeUpdate();
++			
++			if(i != 0)
++			{
++				response.sendRedirect("meeting_info.html");
++			}
++			
++			else
++			{
++				response.sendRedirect("failureStudent.html");
++			}
++			
++		}
++		
++		catch(Exception e)
++		{
++			e.printStackTrace();
++		}
++		
++	}
++}
