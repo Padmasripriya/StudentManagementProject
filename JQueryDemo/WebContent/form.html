@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JQuery Demo</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+
+<script>
+$(document).ready(function () 
+		{
+           $('#country').change(function()
+           {
+              if($('#country').val() == "India")
+            	  $('#city').val("Hyderabad").change();
+              if($('#city').val() == "Hyderabad")
+            	  $('#zip').val("50003").change();
+              
+              if($('#country').val() == "USA")
+            	  $('#city').val("Dallas").change();
+              if($('#city').val() == "Dallas")
+            	  $('#zip').val("75254").change();
+              
+              if($('#country').val() == "China")
+            	  $('#city').val("Beijing").change();
+              if($('#city').val() == "Beijing")
+            	  $('#zip').val("89990").change();
+              
+              if($('#country').val() == "Thailand")
+            	  $('#city').val("Bangkok").change();
+              if($('#city').val() == "Bangkok")
+            	  $('#zip').val("90909").change();
+              
+              if($('#country').val() == "Singapore")
+            	  $('#city').val("Jurong East").change();
+              if($('#city').val() == "Jurong East")
+            	  $('#zip').val("30004").change();
+           })
+});
+</script>
+</head>
+<br><br><br><br>
+<h1 align = "center">Select the below drop down list</h1>
+<body>
+<form action = "saveData.htm">
+<div class = "container">
+<div class="panel panel-success">
+    <div class="panel-heading">Drop down for Country, City and Zip code</div>
+    <div class="panel-body">
+    <div class = "container text-center">
+    <select class="selectpicker" title = "Country" data-style="btn-info" id = "country" name = "country">
+       <option value = "India">India</option>
+       <option value = "USA">USA</option>
+       <option value = "China">China</option>
+       <option value = "Thailand">Thailand</option>
+       <option value = "Singapore">Singapore</option>
+    </select>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+      <select class="selectpicker" title = "City" data-style="btn-info" id = "city" name = "city">
+       <option value = "Hyderabad">Hyderabad</option>
+       <option value = "Dallas">Dallas</option>
+       <option value = "Beijing">Beijing</option>
+       <option value = "Bangkok">Bangkok</option>
+       <option value = "Jurong East">Jurong East</option>
+    </select>
+    
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+     <select class="selectpicker" title = "Zip" data-style="btn-info" id = "zip" name = "zip">
+       <option value = "50003">50003</option>
+       <option value = "75254">75254</option>
+       <option value = "89990">89990</option>
+       <option value = "90909">90909</option>
+       <option value = "30004">30004</option>
+    </select>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+   </div>
+   <br>
+   <div class = "container text-center">
+     <button type="submit" class="btn btn-warning">Save</button>
+  </div>
+</div>
+</div>
+</div>
+</form>
+
+</body>
+</html>
